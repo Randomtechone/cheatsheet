@@ -58,6 +58,4 @@
 - **Write-Host**: Display output.
 - **if**, **else**, **foreach**, **while**: Control flow.
 
-Remember to replace placeholders with actual parameters when using these commands. For more details, consult the official documentation.
 
-Happy scripting! 🚀
