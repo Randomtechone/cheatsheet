@@ -99,11 +99,13 @@ nmap 192.168.1.1 -n
 
 - **SSL enumeration**:
   
-  nmap X.X.X.X --script ssl-enum-ciphers -p 443
-  nmap X.X.X.X --script ssl-cert -p 443
+nmap X.X.X.X --script ssl-enum-ciphers -p 443  
+nmap X.X.X.X --script ssl-cert -p 443
   
 - **SSH enumeration**:
-  nmap X.X.X.X --script ssh2-enum-algos -p 22
+  
+nmap X.X.X.X --script ssh2-enum-algos -p 22
   
 - **Redis enumeration**:
+  
 nmap X.X.X.X --script redis-info -p 6379
