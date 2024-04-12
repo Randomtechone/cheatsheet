@@ -94,3 +94,15 @@ nmap 192.168.1.1-1/24 -PR
 - **Never do DNS resolution**:
 
 nmap 192.168.1.1 -n
+
+## Enumeration
+
+- **SSL enumeration
+  nmap X.X.X.X --script ssl-enum-ciphers -p 443
+  nmap X.X.X.X --script ssl-cert -p 443
+  
+- **SSH enumeration
+  nmap X.X.X.X --script ssh2-enum-algos -p 22
+  
+- **Redis enumeration 
+nmap X.X.X.X --script redis-info -p 6379
