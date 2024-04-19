@@ -58,4 +58,23 @@
 - **Write-Host**: Display output.
 - **if**, **else**, **foreach**, **while**: Control flow.
 
+## Culr analogs
+### Examples
+
+**Make a web request to the educative website:**  
+``` Invoke-WebRequest -URI https://www.educative.io/ ```
+ 
+**Get all links on a webpage:**  
+``` (Invoke-WebRequest -Uri "https://www.educative.io/").Links.Href ```
+ 
+**Submit form-data:**  
+```
+$Form = @{
+    firstName  = 'Bruce'
+    lastName   = 'Wayne'
+    email      = 'batman@wayne.com'
+    occupation = 'Superhero'
+ }
+ $Result = Invoke-WebRequest -Uri [sample-url] -Method Post -Form $Form
+Similarly, you can run more curl commands using Invoke-WebRequest. ```
 
