@@ -40,6 +40,10 @@
 - **free**: Display memory usage.
 - **uptime**: System uptime.
 
+## User Information  
+
+- **whoami**: Displays curentely active user.  
+
 ## Networking
 
 - **ping**: Test network connectivity.
