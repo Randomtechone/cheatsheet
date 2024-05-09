@@ -4,108 +4,107 @@
 
 - **Scan a single IP**:
 
-nmap 192.168.1.1
-
+```nmap 192.168.1.1```
 
 - **Scan specific IPs**:
 
-nmap 192.168.1.1 192.168.2.1
+```nmap 192.168.1.1 192.168.2.1```
 
 
 - **Scan a range**:
 
-nmap 192.168.1.1-254
+```nmap 192.168.1.1-254```
 
 
 - **Scan a domain**:
 
-nmap scanme.nmap.org
+```nmap scanme.nmap.org```
 
 
 - **Scan targets from a file**:
 
-nmap -iL targets.txt
+```nmap -iL targets.txt```
 
 
 ## Nmap Scan Techniques
 
 - **TCP SYN port scan (Default)**:
 
-nmap 192.168.1.1 -sS
+```nmap -sS 192.168.1.1```
 
 
 - **TCP connect port scan (Default without root privilege)**:
 
-nmap 192.168.1.1 -sT
+```nmap -sT 192.168.1.1```
 
 
 - **UDP port scan**:
 
-nmap 192.168.1.1 -sU
+```nmap -sU 192.168.1.1```
 
 
 - **TCP ACK port scan**:
 
-nmap 192.168.1.1 -sA
+```nmap -sA 192.168.1.1```
 
 
 - **TCP Window port scan**:
 
-nmap 192.168.1.1 -sW
+```nmap -sW 192.168.1.1```
 
 
 ## Host Discovery
 
 - **List targets only (No Scan)**:
 
-nmap 192.168.1.1-3 -sL
+```nmap -sL 192.168.1.1-3```
 
 
 - **Disable port scanning. Host discovery only**:
 
-nmap 192.168.1.1/24 -sn
+```nmap -sn 192.168.1.1/24```
 
 
 - **Disable host discovery. Port scan only**:
 
-nmap 192.168.1.1-5 -Pn
+```nmap -Pn 192.168.1.1-5```
 
 
 - **TCP SYN discovery on port x (Port 80 by default)**:
 
-nmap 192.168.1.1-5 -PS22-25,80
+```nmap -PS22-25,80 192.168.1.1-5```
 
 
 - **TCP ACK discovery on port x (Port 80 by default)**:
 
-nmap 192.168.1.1-5 -PA22-25,80
+```nmap -PA22-25,80 192.168.1.1-5```
 
 
 - **UDP discovery on port x (Port 40125 by default)**:
 
-nmap 192.168.1.1-5 -PU53
+```nmap -PU53 192.168.1.1-5```
 
 
 - **ARP discovery on local network**:
 
-nmap 192.168.1.1-1/24 -PR
+```nmap -PR 192.168.1.1-1/24```
 
 
 - **Never do DNS resolution**:
 
-nmap 192.168.1.1 -n
+```nmap -n 192.168.1.1```
 
 ## Enumeration
 
 - **SSL enumeration**:
   
-nmap X.X.X.X --script ssl-enum-ciphers -p 443  
-nmap X.X.X.X --script ssl-cert -p 443
+```nmap --script ssl-enum-ciphers -p 443 192.168.1.1```   
+```nmap --script ssl-cert -p 443 192.168.1.1```   
   
 - **SSH enumeration**:
   
-nmap X.X.X.X --script ssh2-enum-algos -p 22
+```nmap --script ssh2-enum-algos -p 22 192.168.1.1```   
   
 - **Redis enumeration**:
   
-nmap X.X.X.X --script redis-info -p 6379
+```nmap --script redis-info -p 6379 192.168.1.1```   
