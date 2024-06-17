@@ -2,19 +2,12 @@
 
 ## Target Specification
 
-- **Scan a single IP**:
+- **Ways to Scan**:
 
-```nmap 192.168.1.1```
-
-- **Scan specific IPs**:
-
-```nmap 192.168.1.1 192.168.2.1```
-
-
-- **Scan a range**:
-
-```nmap 192.168.1.1-254```
-
+```nmap 192.168.1.1```  
+```nmap 192.168.1.1 192.168.2.1```  
+```nmap 192.168.1.1-254```  
+```nmap 192.168.1.0/24```  
 
 - **Scan a domain**:
 
@@ -27,6 +20,10 @@
 
 
 ## Nmap Scan Techniques
+
+- **Fast scan**:
+
+```nmap -T4 192.168.1.1```
 
 - **TCP SYN port scan (Default)**:
 
