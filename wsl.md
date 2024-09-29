@@ -6,6 +6,9 @@
 `wsl -l --verbose`  
 `wsl -l -v`  
 
+## To list online avilable distros   
+`wsl --list --online`  
+
 ## To run a specific distro
 `wsl -d distro_name`  
 `wsl --distribution distro_name`  
