@@ -1,3 +1,4 @@
+## Generic commands
 - **`docker run`**: This command is used to create a container from an image and start it. For example, `docker run ubuntu` will start a container with the Ubuntu image.
 - **`docker ps`**: This command lists all the running containers. You can use the `-a` or `--all` flag to show all containers (both running and stopped).
 - **`docker stop`**: This command stops a running container. For example, `docker stop my_container` will stop the container named "my_container".
@@ -10,3 +11,15 @@
 - **`docker login`** and **`docker logout`**: These commands are used to log in to and log out from a Docker registry.
 - **`docker version`**: This command shows the version of Docker that is currently installed.
 - **`docker info`**: This command displays system-wide information about Docker.
+
+
+## Create and run containers
+###Kali   
+`docker pull docker.io/kalilinux/kali-rolling`   
+`docker run --tty --interactive kalilinux/kali-rolling`   
+   
+###Ubuntu   
+`docker pull ubuntu`   
+or for specific version   
+`docker pull ubuntu:24.04`   
+`docker run -ti --rm ubuntu /bin/bash`   
