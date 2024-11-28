@@ -50,7 +50,8 @@
 - **ifconfig**: Configure network interfaces.
 - **netstat**: Network statistics.
 - **ssh**: Secure shell for remote access.
-
+- **nmcli**: network manager. (```nmcli dev wifi list```)
+- 
 ## Package Management
 
 - **apt**: Package manager for Debian-based systems.
