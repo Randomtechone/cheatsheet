@@ -97,6 +97,7 @@
   
 ```nmap --script ssl-enum-ciphers -p 443 192.168.1.1```   
 ```nmap --script ssl-cert -p 443 192.168.1.1```   
+```nmap --script http-security-headers -p 443 192.168.1.1```
   
 - **SSH enumeration**:
   
